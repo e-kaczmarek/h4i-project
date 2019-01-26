@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hack4Impact - Apply</title>
+    <link rel="stylesheet" href="h4i-styles.css">
+    <link rel="stylesheet" href="application-styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/h4i-logo.png" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- make #default link into homepage link -->
+      <img src='images/h4i-logo-full.png' class='logo' width='200' alt="Hack4Impact logo">
+      <div class="header-right">
+        <a href="h4i.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a class="active" href="application.html">Apply</a>
+      </div>
+    </div>
+    <div class="buffer"></div>
+    <header class="app-form-header">
+      <h1>Apply now!</h1>
+      <p><em>Hack4Impact, BU chapter, is currently accepting applications
+      to join their team. Fill out the following form and one of us
+      will contact you shortly after we recieve your application.</em></p>
+    </header>
+    <form class="app-form" action="" method="get">
+      <div class="form-row">
+        <label for="full-name">Full Name:</label>
+        <input id="full-name" name="full-name" type="text"/>
+      </div>
+      <div class='form-row'>
+        <label for='email'>Email</label>
+        <input id='email'
+          name='email'
+          type='email'
+          placeholder='joe@example.com'/>
+        </div>
+        <fieldset class='legacy-form-row'>
+          <legend>Class Year</legend>
+          <input id='freshman'
+                 name='class-year'
+                 type='radio'
+                 value='freshman'
+                 checked />
+          <label for='freshman' class='radio-label'>Freshman</label>
+          <input id='sophomore'
+                 name='class-year'
+                 type='radio'
+                 value='sophomore' />
+          <label for='sophomore' class='radio-label'>Sophomore</label>
+          <input id='junior'
+                 name='class-year'
+                 type='radio'
+                 value='junior' />
+          <label for='junior' class='radio-label'>Junior</label>
+          <input id='senior'
+                 name='class-year'
+                 type='radio'
+                 value='senior' />
+          <label for='senior' class='radio-label'>Senior</label>
+        </fieldset>
+        <div class="form-row">
+          <label for="major">Major:</label>
+          <input id="major" name="major" type="text"/>
+        </div>
+        <div class='form-row'>
+          <label for='misc-info'>Other:</label>
+          <textarea id='misc-info' name='misc-info'></textarea>
+          <div class='instructions'>Any other information you'd like us
+          to consider -- this can include links to other web/app development
+        projects you've completed in the past.</div>
+        </div>
+        <div class="form-row">
+          <label for="fileupload">Upload your Resume or CV</label>
+          <input type="file" name="fileupload" value="fileupload" id="fileupload">
+        </div>
+        <div class='form-row'>
+          <button>Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="h4i-script.js"></script>
+  </body>
+</html>

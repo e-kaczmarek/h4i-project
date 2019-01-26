@@ -1,0 +1,212 @@
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: .75em
+  }
+    .header a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
+    /* makes content lower than navbar*/
+    .buffer {
+      margin-top: 250px;
+    }
+    .bufferhome {
+      margin-top: 225px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  html {
+    font-size: 1em
+  }
+    .header a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
+    /* makes content lower than navbar*/
+    .buffer {
+      margin-top: 100px;
+    }
+    .bufferhome {
+      margin-top: 90px;
+    }
+}
+/* General font and spacing for page. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  color: #404040
+}
+body {
+  background-image: url(images/square_bg.png);
+}
+.page {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+/* styles navbar */
+.header {
+  overflow: hidden;
+  background-color: #d1e0e0;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border-bottom: #507c7c solid 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: opacity 1s;
+}
+
+
+/* Stles header links */
+.header a{
+  float: left;
+  color: #404040;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 1.125em;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+/* Stle logo link */
+.header a.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* change background color on mouse-over */
+.header a:hover {
+  background-color: #c2d6d6;
+  color: #404040;
+}
+/* Style active/currect link */
+.header a.active {
+  background-color: #669999;
+  color: white;
+}
+/* Float link section to the right */
+.header-right {
+  float: right;
+}
+.hometext {
+  background-color: #d1e0e0;
+  overflow: auto;
+  background: rgba(224, 235, 235, 0.8);
+  padding: 20px 10px;
+  margin: 20px 20%;
+}
+/* Adjust paragraph block to be centered. */
+.hometext p {
+  display: block;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-size: 1.25em;
+}
+hr {
+  border: 2px solid #507c7c;
+  border-radius: 2px;
+}
+
+/* Centers title and teammember bios. */
+h1, p {
+  text-align: center;
+}
+
+/* Centers, spaces, and sizes team member portraits.*/
+.tm {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 40%;
+  opacity: 1;
+}
+
+/* Adjusts teammember box spacing & font attributes */
+.Team-member {
+  overflow: auto;
+  /*background-color: #f1f1f1;*/
+  background: rgba(224, 235, 235, 0.6);
+  padding: 20px 10px;
+  margin: 20px 20%;
+}
+.Team-member h3{
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Positions background photos on homepage*/
+.container,
+.container1,
+.container2,
+.container3 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.container {
+  background-image: url('images/backgroundphoto.jpeg');
+}
+.container1 {
+  background-image: url('images/backgroundphoto1.jpeg');
+}
+.container2 {
+  background-image: url('images/backgroundphoto2.jpeg');
+}
+.container3 {
+  background-image: url('images/backgroundphoto3.jpeg');
+  background-size:cover;
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  html {
+    font-size: 1.25em
+  }
+  body {
+    background-image: url('images/backgroundphoto3.jpeg');
+    background-size:cover;
+  }
+  /* makes content lower than navbar*/
+  .buffer {
+    margin-top: 100px;
+  }
+  .bufferhome {
+    margin-top: 90px;
+  }
+  .container,
+  .container1,
+  .container2,
+  .container3 {
+    background-image: none;
+  }
+  .container1,
+  .container2 {
+    width: 50%;
+    float: left;
+    background-image: none;
+    opacity: 1.5;
+  }
+}
